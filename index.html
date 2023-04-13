@@ -1,57 +1,101 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-	<title>Describing Data Assignment</title>
-	<style>
-		html {
-			margin: 0;
-			padding: 0;
-			height: 100%;
+	
+  <style>
+h2 {
+    font-size: 20px !important;
+}
+	  
+</style>
+    <head>
+        <title>Describing Data Assignment</title>
+        <style>
+        	html {
+				margin: 0;
+				padding: 0;
+				height: 100%;
+			}
+			body { 
+				font: 100% georgia, sans-serif;
+				line-height: 1.8em;
+				color: #555753; 
+				height:100%
+			}
+		
+		#myiframe {
+			margin-left: 170px;
 		}
-
-		body {
-			font: 100% georgia, sans-serif;
-			line-height: 1.8em;
-			color: #555753;
-			height: 100%
+		
+		small {
+			text-align: center;
 		}
-
+		
+		h2 {
+			text-align: center;
+		}
+		
+		p {
+			text-align: center; 
+			font-size: 15px;
+			max-width: 800px;
+			margin: 0 auto;
+		}
+		
 		iframe {
 			display: block;
 			margin: auto;
 		}
+		</style>
+    </head>
 
+    <body>
+    	<h2>Frequency of Voting with Different Income and Education Levels</h2>
+    	<iframe src="categories.html" title="Categories Plot" width = "80%" height = "80%" 
+    	frameBorder="0"></iframe> 
+	<p>A majority of the people who always vote have a 
+		college education (834 people), while a lot fewer have less than a highschool education (411 people). 
+		Additionally, the sporadic voters were relatively evenly spread among the three categories of education level. 
+		Among the people who rarely/never vote, having less than a highschool education was most common (43.5% of people). 
+		There doesn’t seem to be a super strong relationship between voting frequency and income. 
+		There are slightly more people who rarely/never vote in the lowest income category, whereas there are slightly 
+		more people who always or sporadically vote in the higher income categories, but it’s not a drastic difference.</p>
 
-		figcaption {
-			text-align: center;
-			font-size: 15px;
-			margin-top: 10px;
-		}
+    </body>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+   <body>
+    	<h2>Voter Turnout and Absentee Voting in Virginia General Elections From 2014 to 2022</h2>
+    	<p> (Points with greater than 100% voter turnout were observed but removed.) </p>
+	<iframe id = "myiframe" src="bubble.html" title="Bubble Plot" width = "90%" height = "90%" 
+    	frameBorder="0"></iframe>
+	<p>On average, there were higher voter turnouts across the board during Presidential election years (2016 and 2020). 
+		This is likely due to Presidential elections being seen 
+		as more important than just Congressional elections, causing more people to vote. Additionally, 2020 saw a large uptick in absentee ballots
+		compared to other years. This is due to the COVID-19 pandemic, which caused many more people to submit absentee ballots due to caution 
+		against contracting/spreading the virus.</p>
 
-	</style>
-</head>
+    </body>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+   <body>
+    	<h2>Voter Turnout in Cities and Counties in Virginia in the 2022 General Election</h2>
+    	<iframe src="map.html" title="Map" width = "80%" height = "80%" 
+    	frameBorder="0"></iframe> 
+	<br>
+	<br>
+	<p>Based on the map, voter turnout increases the further east you go. 
+		The localities with the lowest percent voter turnout (the lightest colors) seem to be mostly in the furthest southwest part of Virginia. 
+		On the eastern side of Virginia, there is higher voter turnout on average, indicated by there being darker colored localities in the map. 
+		It also looks like voter turnout increases on average the further north you go, as there are darker colored localities on the northern side 
+		of Virginia compared to the southern side.</p>
 
-<body>
-	<figure>
-		<h2>Frequency of Voting with Different Income and Education Levels</h2>
-		<iframe src="categories.html" title="Categories Plot" width="80%" height="80%" frameborder="0"></iframe>
-		<figcaption>A majority of the people who always vote have a college education (834 people), while a lot fewer have less than a highschool education (411 people). Additionally, the sporadic voters were relatively evenly spread among the three categories of education level. Among the people who rarely/never vote, having less than a highschool education was most common (43.5% of people). There doesn’t seem to be a super strong relationship between voting frequency and income. There are slightly more people who rarely/never vote in the lowest income category, whereas there are slightly more people who always or sporadically vote in the higher income categories, but it’s not a drastic difference.</figcaption>
-	</figure>
-
-	<figure>
-		<h2>Voter Turnout and Absentee Voting in Virginia General Elections From 2014 to 2022</h2>
-		<iframe src="bubble.html" title="Bubble Plot" width="90%" height="90%" frameborder="0"></iframe>
-		<figcaption>On average, there were higher voter turnouts across the board during Presidential election years (2016 and 2020). This is likely due to Presidential elections being seen as more important than just Congressional elections, causing more people to vote. Additionally, 2020 saw a large uptick in absentee ballots compared to other years. This is due to the COVID-19 pandemic, which caused many more people to submit absentee ballots due to caution against contracting/spreading the virus.</figcaption>
-	</figure>
-
-	<figure>
-		<h2>Voter Turnout in Cities and Counties in Virginia in the 2022 General Election</h2>
-		<iframe src="map.html" title="Map" width="80%" height="80%" frameborder="0"></iframe>
-		<figcaption>Based on the map, voter turnout increases the further east you go. The localities with the lowest percent voter turnout (the lightest colors) seem to be mostly in the furthest southwest part of Virginia. On the eastern side of Virginia, there is higher voter turnout on average, indicated by there being darker colored localities in the map. It also looks like voter turnout increases on average the further north you go, as there are darker colored localities on the northern side of Virginia compared to the southern side.</figcaption>
-	</figure>
-
-</body>
-
+    </body>
 </html>
-
