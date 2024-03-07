@@ -65,11 +65,11 @@
 									
 								<p> The NBA finals are one of the most watched sporting events in the world, with 
 								viewership peaking at 16.9 million during the 2022 NBA finals. As an NBA 
-								fan and casual sports bettor, I was interested in seeing what the biggest indicators 
-								of success in the NBA playoffs are and whether or not I could use those indicators to narrow 
+								fan and casual sports bettor, I was interested in seeing the biggest indicators 
+								of success in the NBA playoffs and whether or not I could use those indicators to narrow 
 								down the list of potential NBA champions for the 2022-2023 season. I collected the advanced 
 								statistics for each NBA season from the 2011-2012 season to the 2021-2022 season from 
-								Basketball Reference and conducted an analysis on the data to hopefully gain some insight 
+								Basketball Reference and analyzed the data to hopefully gain some insight 
 								into what makes an NBA champion.</p>
 									</section>
 								
@@ -84,13 +84,13 @@
 									
 									<p>As a starting point, I was interested in seeing the offensive and defensive ratings of previous championship winners, and whether or not there have been any trends that 
 									can be observed over the past 11 seasons. Offensive rating is an estimate of the number of points a team
-									scores per 100 possesions, while defensive rating is an estimate of how many points a team
-									allows per 100 possesions. To investigate this, I created a line plot that visualizes 
+									scores per 100 possessions, while defensive rating is an estimate of how many points a team
+									allows per 100 possessions. To investigate this, I created a line plot that visualizes 
 									the offensive and defensive ratings of NBA champions, and as shown in the plot, the offensive 
 									rating of NBA champions has been on an upward trend while the defensive rating of NBA champions 
 									has been on a downward trend. This is something that we would expect to see, as teams have become more offensive 
 									minded over the last few seasons. Keeping the information shown in the plot in mind, we can expect this year's NBA 
-									champion to have a defensive rating between approximately 106 and 112 and an offensive rating 
+									champion to have a defensive rating lower than 112 (lower is better) and an offensive rating 
 									that is greater than 112.</p>
 									</section>
 									
@@ -100,13 +100,13 @@
 									</header>
 										
 									<iframe src="PCA_plot.html" onload='javascript:(function(o){o.style.height=o.contentWindow.document.body.scrollHeight+"px";}(this));' style="height:200px;width:100%;border:none;overflow:hidden;"></iframe>
-									<p>In order to get a better idea of what championship teams look like, I decided to do PCA 
+									<p> To get a better idea of what championship teams look like, I decided to do PCA 
 									on the data. I then got the weights of the original variables to determine which statistics 
 									are the strongest indicators of whether or not a team wins a championship. The original variables 
-									with the largest weights included margin of victory, simple rating system, and net rating. I then 
+									with the largest weights are margin of victory, simple rating system, and net rating. I then 
 									found the correlation coefficients for each variable with whether or not a team won the championship 
-									in order to further determine the most important statistics in predicting success in the playoffs. 
-									The variable with the highest correlation with NBA championship victory was margin of victory, closely 
+									to further determine the most important statistics in predicting success in the playoffs. 
+									The variable with the highest correlation with NBA championship victory was margin of victory, which was closely 
 									followed by net rating, simple rating system, and effective field goal percentage. Margin of victory, net rating, 
 									and simple rating system are very similar in terms of what they are measuring, so they are strongly linearly 
 									correlated. Because of this, I decided to look only at margin of victory and effective field goal percentage 
@@ -138,8 +138,7 @@
 									<iframe src="c1.png" onload='javascript:(function(o){o.style.height=o.contentWindow.document.body.scrollHeight+"px";}(this));' style="height:500px;width:100%;border:none;overflow:hidden;"></iframe>
 									
 									<p> After determining the four teams who met the criteria of NBA champions in terms of margin of victory 
-									and effective field goal percentage, I decided to plot those teams’ offensive and defensive ratings in an 
-									attempt to determine which team has the best chance of winning the championship this year. As explained earlier,
+									and effective field goal percentage, I decided to plot those teams’ offensive and defensive ratings. As explained earlier,
 									offensive rating is a measure of how many points a team scores while defensive rating is a measure of how 
 									many points a team gives up. A larger difference between offensive and defensive ratings should
 									correlate with being a better team, and therefore also correlate with having a better chance of winning
@@ -154,10 +153,10 @@
 										<h2> <strong>Final Prediction</strong></h2>
 									</header>
 									
-									<p> After considering all of the factors discussed earlier, the Celtics are the team that bests fits the criteria of a traditional
+									<p> After considering all of the factors discussed earlier, the Celtics are the team that best fits the criteria of a traditional
 									NBA champion. They have both a top three offensive and a top three defensive rating, and they have the largest difference between offensive and defensive
-									rating in the NBA this season. On top of that, they have the largest margin of victory in the league and a top five effective field goal
-									percentage. As the runner-up last year, I believe the Celtics will put it all together these playoffs and emerge as NBA champions. <br> <br>
+									rating in the NBA this season. On top of that, they have a top-five effective field goal
+									percentage. As the runner-up last year, I believe the Celtics will put it together these playoffs and emerge as NBA champions. <br> <br>
 										
 									<iframe src="boston_celtics_logo.png" onload='javascript:(function(o){o.style.height=o.contentWindow.document.body.scrollHeight+"px";}(this));' style="height:500px;width:100%;border:none;overflow:hidden;"></iframe>
 									</p>
